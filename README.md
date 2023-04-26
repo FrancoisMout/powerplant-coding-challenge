@@ -1,3 +1,25 @@
+## In Visual Studio
+
+The REST API is served on https://localhost:8888 and a swagger is available at https://localhost:8888/swagger/index.html when the application is launched in the development environnement.
+
+## In Command Line Window
+
+Go to the subfolder `\PowerPlantAPI` and execute `dotnet run`.
+
+## Implementation details
+
+1. Use a knapsack algorithm to find a combination of wind turbines matching the load. Since they are free to use ( = no cost) they should be analyzed first.
+
+2. Increase the quantity of other turbines ordered by their cost per MWh. 
+
+3. Once a combination of turbines is found, which means that the required load is between the minimum and the maximum power of the set of turbines, a rebalance of the powers is executed to give more load to cheaper turbines.
+
+4. I have included a example which my algorithm cannot solve as `\example_payloads\payload4.json`.
+
+`Note:` I have used VS2022 with .Net 7.0 for the ASP.NET core WEB API project.
+
+
+Original Readme
 # powerplant-coding-challenge
 
 
